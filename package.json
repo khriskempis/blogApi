@@ -1,0 +1,15 @@
+{
+  "name": "blog-post-api",
+  "version": "0.0.1",
+  "description": "CRUD exercise",
+  "main": "models.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Khris",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
