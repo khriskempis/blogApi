@@ -59,7 +59,7 @@ router.post('/', (req, res) => {
 		if(!(field in req.body)){
 			const message = `Missing ${field} in request body`
 			console.error(message); 
-			return res.sendStatus(400).send(message); 
+			return res.status(400).send(message); 
 		}
 	}
 
@@ -69,7 +69,7 @@ router.post('/', (req, res) => {
 		req.body.author,
 		req.body.publishDate
 		)
-	res.sendStatus(201).json(item); 
+	res.status(201).json(item); 
 })
 
 router.delete('/:id', (req, res) => {
@@ -86,7 +86,7 @@ router.put('/:id', (req, res) => {
 		if(!(field in req.body)){
 			const message = `Missing ${field} in request body`
 			console.error(message); 
-			return res.sendStatus(400).send(message); 
+			return res.status(400).send(message); 
 		}
 	}
 
@@ -95,7 +95,7 @@ router.put('/:id', (req, res) => {
 			`Request path id (${req.params.id}) and request body id`
 			`(${req.body.id}) must match`)
 		console.error(message);
-		return res.sendStatus(400).send(message); 
+		return res.status(400).send(message); 
 	}
 
 	console.log(`Updating Blog Post \`${req.params.id}\``);
@@ -107,7 +107,7 @@ router.put('/:id', (req, res) => {
 		publishDate: req.body.publishDate
 	})
 
-	res.sendStatus(200).end(); 
+	res.status(200).end(); 
 
 });
 
