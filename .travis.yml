@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: HdQbOzgnILHJnb4htMFFuR7rIjKmYBbdktLGTcLoQvQOda86PHE+Dskvv7zUjFzX7mWS0TbZaMtnDE1pxEfGjJok/ra1Sl2ttIr5J/rhC+/1gCv8tRqx8oHsRjfFtXuMp7fX7356mGgBgCHzZQ4M4zlVrvh03NBct+axtRYUqkZDNz7JhrXpG2Ohf7pVBV1AA+gLsywe8bdBjAmIuFbUaRjjNGe7o/LPM9xcPGhmAHivVcfVT3O35WIHHzbFj7JOl1f5pvINRs4bZaQczPE/H4DPjXvPUT36smy9h56Zft7sbVwf5hEXMC3lBk5G9zsDadlD/rp6D2cVLLKNRu40Jl96rBhOedV/ExX5jWC9g27jmRMQ7N4/ov8BvHbCGz1if3HJ815ELPCha2hp+WDIUZD/CwbL/aNL0kVXZNU96zK5z9yCRndmmaHiLUnyV///0JvCczGo4j1djHW7HkEnfHDpmOg5hXUCAoKdd1+KMZ3U6F/355KT3YNMVGKIsORl+DPStm8BhPYvSQ5qgzjzWX3aEv6OgIdoriy07luUFxo5I6bCbB4O6gxY/sPufFQ/DGuoYafirATk0ClCH7ZGGz1c5xr0oFzygx+q+0c8NRHIKiO38DpgyaPOrjKMVunwC6mUs23mte6KsbtRTbstym8Bme9qB2ybd4R/MeVnwkc=
+  app: https://thawing-ridge-23829.herokuapp.com/
+  on:
+    repo: khriskempis/blogApi
