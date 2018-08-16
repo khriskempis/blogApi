@@ -53,7 +53,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
 
-		const requiredFeilds = ['title', 'content', 'author', 'publishDate'];
+		const requiredFeilds = ['title', 'content', 'author'];
 	for(let i=0; i<requiredFeilds.length; i++){
 		let field = requiredFeilds[i];
 		if(!(field in req.body)){
